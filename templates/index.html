@@ -1,1 +1,34 @@
+<html>
+    <head>    
+        <title>Speech to Text</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}" />
+    </head>
 
+    <body>
+    <div class = "container">
+
+        <div class= "heading">
+            <h1>Speech to Text</h1>
+        </div>
+        <div class= "container1">
+            <div id= "speechContainer">
+                <h1>Upload an Audio File</h1>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file">
+                    
+                    <input type="submit" id= "submitButton" value="Transcribe">
+                </form>
+            </div>
+        
+        
+            <div id= "speechTranscript">
+            {%if transcript != ""%}
+                <h2>Transcription</h2>
+                <p id= "speechText">{{transcript}}</p>
+            {% endif %}
+
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
