@@ -1,0 +1,64 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(89, 93, 93);
+}
+.container{
+    margin: auto;
+    width: 80%;
+    
+}
+
+.container1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading{
+    margin: 2%;
+    background-color:#85c1dd;
+    text-align: center;
+    padding: 1%;
+}
+
+#speechContainer {
+    margin: 2%;
+    background-color: rgb(60, 160, 160);
+    color: aliceblue;
+    padding: 1%;
+    text-align: center;
+    flex: 1;
+    /* width:50%;
+    float: left;
+    box-sizing: border-box; */
+}
+
+
+#submitButton {
+    background-color: #0191FE;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+  
+}
+
+#submitButton:hover {
+    cursor: pointer;
+    background-color: #a2bccf;
+    color: black;
+
+}
+
+#speechTranscript {
+    margin: 2%;
+    padding: 1%;
+    background-color: antiquewhite;
+    border: rgb(144, 143, 143);
+    border-style: dashed;
+    text-align: center;
+    flex: 1;
+/*     
+    width:50%;
+    float: right;
+    box-sizing: border-box; */
+}
